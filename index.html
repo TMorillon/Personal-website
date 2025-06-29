@@ -180,10 +180,6 @@
                   url('Teaching.jpg') center/cover no-repeat;
     }
 
-    @keyframes glow {
-      0%, 100% { box-shadow: 0 0 10px #ffcc00; }
-      50% { box-shadow: 0 0 20px #ff9900; }
-    }
     
     #scrollTopBtn {
       display: none;
@@ -205,6 +201,11 @@
 
     #scrollTopBtn:hover {
       background-color: #4a0a12;
+    }
+
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 10px #ffcc00; }
+      50% { box-shadow: 0 0 20px #ff9900; }
     }
 
 
@@ -320,17 +321,7 @@
   
 </script>
 
-<script>
-  const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-  window.onscroll = () => {
-    scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
-  };
-
-  scrollTopBtn.onclick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
