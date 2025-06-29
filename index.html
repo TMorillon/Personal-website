@@ -43,8 +43,8 @@
 
     header .container {
       display: flex;
-      justify-content: flex-start; /* so nav stays next to your name */
-      align-items: baseline;       /* aligns text baselines */
+      justify-content: space-between; /* so nav stays next to your name */
+      align-items: center;       /* aligns text baselines */
       gap: 2rem;
     }
 
@@ -214,7 +214,19 @@
       50% { box-shadow: 0 0 20px #ffcc66; }
     }
 
+    
+   #darkModeToggle {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #d0c29f;
+    }
 
+    #darkModeToggle:hover {
+      color: #ffffff;
+    }
+    
     body.dark {
       --bg-color: #1a1a1a;
       --text-color: #f2f2f2;
