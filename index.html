@@ -11,11 +11,11 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #fff9f6;
-      color: #333;
+      background-color: #fff8ef;
+      color: #2d2a26;
     }
     header {
-      background: #7a0019;
+      background: #6a0f18;
       color: #fff;
       padding: 2rem 1rem;
       text-align: center;
@@ -30,7 +30,7 @@
       margin: 0 20px;
     }
     nav ul li a {
-      color: #ffd700;
+      color: #d4af37;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
@@ -39,42 +39,41 @@
       color: #fff;
     }
     .hero {
-      background: #fdf3ed;
-      padding: 5rem 2rem;
+      background: #fff3e6;
+      padding: 6rem 2rem;
       text-align: center;
-      animation: fadeIn 1s ease-in;
+      animation: swoosh 1s ease-in;
     }
     .hero img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
+      width: 280px;
+      height: auto;
       border-radius: 50%;
       margin-bottom: 1rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     }
     .hero h2 {
-      font-size: 2.5rem;
+      font-size: 2.7rem;
       margin-bottom: 1rem;
-      color: #7a0019;
+      color: #6a0f18;
     }
     .hero p {
       font-size: 1.3rem;
-      max-width: 700px;
+      max-width: 750px;
       margin: 0 auto 2rem;
     }
     .hero .buttons a {
       display: inline-block;
       margin: 0 10px;
-      padding: 0.6rem 1.2rem;
-      background: #7a0019;
+      padding: 0.7rem 1.4rem;
+      background: #6a0f18;
       color: #fff;
       text-decoration: none;
       border-radius: 6px;
-      transition: background 0.3s, transform 0.2s;
+      transition: background 0.3s, transform 0.3s;
     }
     .hero .buttons a:hover {
-      background: #5c0013;
-      transform: translateY(-2px);
+      background: #4a0a12;
+      transform: scale(1.05);
     }
     section {
       padding: 2rem;
@@ -83,7 +82,7 @@
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
-      animation: fadeIn 1s ease-in;
+      animation: swoosh 0.8s ease-in;
     }
     h1, h2 {
       color: #111827;
@@ -91,14 +90,14 @@
     footer {
       text-align: center;
       padding: 1.5rem;
-      background: #f3f3f3;
+      background: #f1f1f1;
       margin-top: 3rem;
       font-size: 0.9rem;
       color: #555;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+    @keyframes swoosh {
+      from { opacity: 0; transform: translateX(-40px); }
+      to { opacity: 1; transform: translateX(0); }
     }
   </style>
 </head>
