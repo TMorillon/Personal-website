@@ -180,6 +180,28 @@
                   url('Teaching.jpg') center/cover no-repeat;
     }
 
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      z-index: 99;
+      font-size: 18px;
+      background-color: #6a0f18;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: opacity 0.3s ease;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #4a0a12;
+    }
+
+
     footer {
       text-align: center;
       padding: 1.5rem;
@@ -188,10 +210,11 @@
       font-size: 0.9rem;
       color: #555;
     }
-
-    
-  </style>
+   
+  </style>  
 </head>
+
+  
 <body>
   <header>
     <div class="container">
@@ -273,7 +296,8 @@
     </p>
   </section>
 
-  
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
   <footer>
     <p>&copy; 2025 Thibaut G. Morillon</p>
   </footer>
@@ -287,6 +311,20 @@
     origin: 'bottom',
     interval: 200
   });
+  
 </script>
+
+<script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = () => {
+    scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+  };
+
+  scrollTopBtn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
+
 </body>
 </html>
