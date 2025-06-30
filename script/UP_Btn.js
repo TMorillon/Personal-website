@@ -4,7 +4,7 @@
     window.addEventListener('scroll', () => {
       const scrollPosition = window.scrollY || document.documentElement.scrollTop;
       const pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrollThreshold = pageHeight * 0.2; // 20% of page height
+      const scrollThreshold = 100;
 
       if (scrollPosition > scrollThreshold) {
         scrollTopBtn.style.display = 'block';
