@@ -93,6 +93,9 @@
 
 
     .hero {
+      background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90));
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.06);
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -100,9 +103,7 @@
       margin: 2rem auto 2rem 12%;
       padding-top: 1.5rem;
       padding: 2rem;
-      background: rgba(255, 255, 255, 0.90);
-      border-radius: 10px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+
       align-items: flex-start;
       gap: 0.25rem;
     }
@@ -256,6 +257,14 @@
       --text-color: #ffffff;
       --box-color: #6a0f18;
     }
+
+    body.dark .hero-title {
+      color: #d0c29f;
+    }
+    body.dark .hero {
+      background: linear-gradient(rgba(106, 15, 24, 0.90), rgba(106, 15, 24, 0.90));
+    }
+
 
     section,
     .hero,
