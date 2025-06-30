@@ -395,9 +395,12 @@
     }
      
     hr {
-      margin: 0.5rem 0;
       border: none;
-      border-top: 1px solid #999;
+      border-top: 1px solid rgba(0, 0, 0, 0.2); /* light mode line */
+      margin: 0.5rem 0;
+    }
+    body.dark hr {
+      border-top: 1px solid rgba(255, 255, 255, 0.3); /* white-ish in dark mode */
     }
      
     .pub-entry {
@@ -570,7 +573,7 @@
 <section id="research-full" class="fullpage-section">
   <h2 style="font-size: 2.5rem; font-family: 'Spectral', serif; margin-top: 0; margin-bottom: 0.5rem;">Research</h2>
   <h3 style="font-size: 2rem; margin-bottom: 0.2rem;"><i>Published</i></h3>
-  <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.2); margin-bottom: 0.5rem;">
+  <hr style="border: none; margin-bottom: 0.5rem;">
 
   <div class="pub-year">
     <h3 style="font-size: 2rem;">2025</h3>
