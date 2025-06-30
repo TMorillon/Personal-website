@@ -16,3 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     easing: 'ease-in-out',
   });
 });
+
+ScrollReveal().reveal('hr', {
+  beforeReveal: (el) => {
+    el.classList.add('reveal');
+  },
+  distance: '0px',
+  duration: 0
+});
