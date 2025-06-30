@@ -379,20 +379,9 @@
       line-height: 1.5;
     }
 
-    .pub-entry p {
-      font-size: 1.1rem;
-      font-family: 'Merriweather', serif;
-      line-height: 1.6;
-      margin-bottom: 0.2rem;
-    }
-
-    .pub-entry strong {
-      font-weight: 700;
-    }
-
-
     .pub-year {
       padding-bottom: 0rem;
+      margin-top: 3rem;
     }
 
     .pub-year h3 {
@@ -400,6 +389,21 @@
       font-weight: 700;
       margin-top: 1rem;
     }
+
+    .pub-entry p {
+      font-size: 1.1rem;
+      font-family: 'Merriweather', serif;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .pub-entry strong {
+      font-weight: 700;
+    }
+
+    .pub-year .pub-entry + .pub-entry {
+      margin-top: 1rem; /* smaller space between same-year pubs */
+}
 
 
     .pub-note-wrap {
