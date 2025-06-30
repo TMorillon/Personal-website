@@ -44,7 +44,9 @@
     }
 
 
-    
+    /* ============================
+               Header
+    ============================ */  
     header {
       position: sticky;
       top: 0;
@@ -75,6 +77,9 @@
     }
 
     
+    /* ============================
+               Nav
+    ============================ */       
     nav ul {
       list-style: none;
       padding: 0;
@@ -103,6 +108,9 @@
     }
 
 
+    /* ============================
+               Hero
+    ============================ */  
     .hero {
       background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90));
       border-radius: 10px;
@@ -197,6 +205,9 @@
     }
 
     
+    /* ============================
+            Section
+    ============================ */  
     section {
       max-width: 880px;
       margin: 2rem auto 2rem 12%;
@@ -219,7 +230,10 @@
       color: #d0c29f; 
     }
 
-    
+
+ /* ============================
+     #Research & Teaching
+  ============================ */  
     #research,
     #teaching {
       background:
@@ -238,6 +252,7 @@
       font-weight: bold;
       font-size: 1.1rem;
       padding: 0.5rem 1rem;
+      background-color: #ffffff;
       border: 2px solid #b0893d; /* deeper Elon gold */
       color: #b0893d;
       text-decoration: none;
@@ -258,7 +273,9 @@
     }
 
 
-    
+    /* ============================
+              scrollTopBtn
+    ============================ */      
      #scrollTopBtn {
       display: none;
       position: fixed;
@@ -286,7 +303,9 @@
       50% { box-shadow: 0 0 20px #ffcc66; }
     }
 
-    
+    /* ============================
+            darkModeToggle
+    ============================ */     
    #darkModeToggle {
       background: none;
       border: none;
@@ -318,7 +337,9 @@
       background: var(--box-color);
     }
 
-
+    /* ============================
+      Research-full & Teaching-full
+    ============================ */ 
     #research-full {
       min-height: 100vh; /* full height of the viewport */
       padding: 4rem 2rem;
@@ -340,7 +361,9 @@
     }
 
 
-
+    /* ============================
+            Footer
+    ============================ */ 
     footer {
       text-align: center;
       padding: 1.5rem;
@@ -353,7 +376,12 @@
   </style>  
 </head>
 
-  
+
+<!-- 
+  ============================
+          Body Starts
+  ============================
+-->  
 <body>
   <header>
     <div class="container">
@@ -374,6 +402,12 @@
     </div>
   </header>
 
+
+<!-- 
+  ============================
+          Hero
+  ============================
+-->  
   <section class="hero" id="intro">
     <div class="hero-text">
       <h2 class="hero-title">Thibaut G. Morillon</h2>
@@ -400,6 +434,11 @@
     </div>
   </section>
 
+<!-- 
+  ============================
+          Research
+  ============================
+-->  
   <section id="research">
     <h2>Research Interest</h2>
     <p>Asset Management, Corporate Finance, Fintech, Mergers and Acquisitions, Real Estate.
@@ -409,11 +448,13 @@
     <div style="text-align: right; margin-top: 1rem;">
       <a href="#research-full" class="learn-more-btn">Learn more…</a>
     </div>
-
-    </p>
-
   </section>
 
+<!-- 
+  ============================
+          Teaching
+  ============================
+-->  
   <section id="teaching">
     <h2>Teaching Interest</h2>
     <p> Blockchain & Emerging Tech, Corporate Finance, Financial Modeling, Investments, Real Estate.
@@ -436,6 +477,11 @@
     </div>
   </section>
 
+<!-- 
+  ============================
+         Research-full
+  ============================
+-->  
   <section id="research-full" class="fullpage-section">
     <h2>Research</h2>
     <p>
@@ -443,6 +489,11 @@
     </p>
   </section>
 
+<!-- 
+  ============================
+         Teaching-full
+  ============================
+-->  
   <section id="teaching-full" class="fullpage-section">
     <h2>Teaching</h2>
     <p>
@@ -452,26 +503,25 @@
 
   <button id="scrollTopBtn" title="Go to top">UP</button>
 
+<!-- 
+  ============================
+            Footer
+  ============================
+-->  
   <footer>
     <p>&copy; 2025 Thibaut G. Morillon</p>
   </footer>
-    
-<script src="https://unpkg.com/scrollreveal"></script>
-<script>
-  ScrollReveal().reveal('section', {
-    distance: '40px',
-    duration: 800,
-    easing: 'ease-in-out',
-    origin: 'bottom',
-    interval: 200
-  });
-  
-</script>
 
+<!-- 
+  ============================
+            Scripts
+  ============================
+-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script/ScrollReveal.js"></script>
 <script src="script/UP_Btn.js"></script>
 <script src="script/toggle_Btn.js"></script>
 <script src="script/nav_highlight.js"></script>
-<script src="scripts/researchReveal.js"></script>
 
 </body>
 </html>
