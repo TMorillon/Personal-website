@@ -341,7 +341,8 @@
     /* ============================
       Research-full & Teaching-full
     ============================ */ 
-    #research-full {
+    #research-full,
+    #teaching-full {
       background: linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.9), rgba(var(--bg-overlay, 255,255,255), 0.9));
       font-family: 'Merriweather', serif;
       min-height: 100vh; /* full height of the viewport */
@@ -352,22 +353,27 @@
       justify-content: center;
       scroll-margin-top: 100px; /* so it’s not hidden behind header */
     }
-    body.dark #research-full {
+    body.dark #research-full,
+    body.dark #teaching-full {
       --bg-overlay: 106, 15, 24; /* Elon maroon in dark mode */
     }
     
-    #research-full h2 {
+    #research-full h2,
+    #teaching-full h2 {
       color: #6a0f18;
     }
-    body.dark #research-full h2 {
+    body.dark #research-full h2,
+    body.dark #teaching-full h2 {
       color: #d0c29f;
     }
     
-    #research-full h3 {
+    #research-full h3,
+    #teaching-full h3 {
       color: #6a0f18;
       margin-top: 1rem;
     }
-    body.dark #research-full h3 {
+    body.dark #research-full h3,
+    body.dark #teaching-full h3 {
         color: #d0c29f;
     }
     
@@ -430,38 +436,6 @@
       margin-top: 0.5rem;
     }
 
-  /* ============================
-          Teaching-full
-    ============================ */ 
-    #teaching-full {
-      background: linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.9), rgba(var(--bg-overlay, 255,255,255), 0.9));
-      font-family: 'Merriweather', serif;
-      min-height: 100vh; /* full height of the viewport */
-      padding: 4rem 2rem;
-      background: var(--box-color); /* or customize it */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      scroll-margin-top: 100px; /* so it’s not hidden behind header */
-    }
-    body.dark #teaching-full {
-      --bg-overlay: 106, 15, 24; /* Elon maroon in dark mode */
-    }
-    
-    #teaching-full h2 {
-      color: #6a0f18;
-    }
-    body.dark #teaching-full h2 {
-      color: #d0c29f;
-    }
-    
-    #teaching-full h3 {
-      color: #6a0f18;
-      margin-top: 1rem;
-    }
-    body.dark #teaching-full h3 {
-        color: #d0c29f;
-    }
 
     
     /* ============================
