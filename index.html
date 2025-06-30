@@ -36,6 +36,9 @@
     }
 
     header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       background: #6a0f18;
       color: #d0c29f;
       padding: 0.5rem 2rem;
@@ -46,6 +49,12 @@
       justify-content: space-between; /* so nav stays next to your name */
       align-items: center;       /* aligns text baselines */
       gap: 2rem;
+    }
+
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     header h1 {
@@ -182,15 +191,24 @@
       color: #d0c29f; 
     }
 
-    #research {
-      background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90)),
-                  url('Images/Research.jpg') center/cover no-repeat;
+    #research,
+    #teaching {
+      background:
+        linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.90), rgba(var(--bg-overlay, 255,255,255), 0.90)),
+        url('Images/Research.jpg') center/cover no-repeat;
+    }
+
+    body.dark #research,
+    body.dark #teaching {
+      --bg-overlay: 106, 15, 24; /* Elon maroon RGB */
     }
 
     #teaching {
-      background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90)),
-                  url('Images/Teaching.jpg') center/cover no-repeat;
+      background:
+        linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.90), rgba(var(--bg-overlay, 255,255,255), 0.90)),
+        url('Images/Teaching.jpg') center/cover no-repeat;
     }
+
 
     
      #scrollTopBtn {
@@ -234,9 +252,9 @@
     }
     
     body.dark {
-      --bg-color: #1a1a1a;
-      --text-color: #f2f2f2;
-      --box-color: #2a2a2a;
+      --bg-color: #6a0f18; /* Elon maroon */
+      --text-color: #ffffff;
+      --box-color: #6a0f18;
     }
 
     section,
@@ -270,7 +288,12 @@
           <li><a href="#teaching">Teaching</a></li>
         </ul>
       </nav>
+      
+      <div class="theme-toggle">
+      <label for="darkModeToggle" style="margin-right: 0.5rem; color: #d0c29f;">Theme:</label>
       <button id="darkModeToggle" title="Toggle dark mode">🌓</button>
+      </div>
+
     </div>
   </header>
 
