@@ -342,6 +342,7 @@
       Research-full & Teaching-full
     ============================ */ 
     #research-full {
+      background: linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.9), rgba(var(--bg-overlay, 255,255,255), 0.9));
       font-family: 'Merriweather', serif;
       min-height: 100vh; /* full height of the viewport */
       padding: 4rem 2rem;
@@ -350,6 +351,9 @@
       flex-direction: column;
       justify-content: center;
       scroll-margin-top: 100px; /* so it’s not hidden behind header */
+    }
+    body.dark #research-full {
+      --bg-overlay: 106, 15, 24; /* Elon maroon in dark mode */
     }
     #research-full h3 {
       color: #6a0f18;
@@ -551,8 +555,8 @@
          Research-full
   ============================ 
 -->  
-<section id="research-full" class="fullpage-section" style="background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9));">
-  <h2 style="font-size: 2.5rem; font-family: 'Merriweather', serif; color: #6a0f18; margin-bottom: 0.5rem;">Research</h2>
+<section id="research-full" class="fullpage-section">
+  <h2 style="font-size: 2.5rem; font-family: 'Spectral', serif; color: #6a0f18; margin-bottom: 0.5rem;">Research</h2>
   <h3 style="font-size: 2rem; margin-bottom: 0.2rem;"><i>Published</i></h3>
   <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.2); margin-bottom: 0.5rem;">
 
