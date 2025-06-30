@@ -97,7 +97,7 @@
 
 
     .hero {
-      background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90));
+      background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90));
       border-radius: 10px;
       box-shadow: 0 6px 12px rgba(0,0,0,0.06);
       display: flex;
@@ -177,7 +177,7 @@
       width: 200px;
       height: auto;
       border-radius: 50%;
-      border: 2px solid #d0c29f; /* soft Elon gold */
+      border: 1px solid #d0c29f; /* soft Elon gold */
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
       transition: box-shadow 0.4s ease;
       margin-top: 0;
@@ -294,6 +294,28 @@
     }
 
 
+    #research-full {
+      min-height: 100vh; /* full height of the viewport */
+      padding: 4rem 2rem;
+      background: var(--box-color); /* or customize it */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      scroll-margin-top: 100px; /* so it’s not hidden behind header */
+    }
+
+    #teaching-full {
+      min-height: 100vh; /* full height of the viewport */
+      padding: 4rem 2rem;
+      background: var(--box-color); /* or customize it */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      scroll-margin-top: 100px; /* so it’s not hidden behind header */
+    }
+
+
+
     footer {
       text-align: center;
       padding: 1.5rem;
@@ -314,8 +336,8 @@
       <nav>
         <ul>
           <li><a href="#intro">Home</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#research-full">Research</a></li>
+          <li><a href="#teaching-full">Teaching</a></li>
         </ul>
       </nav>
       
@@ -359,6 +381,10 @@
     <br> 
     <br> These days my co-authors and I are focusing on the application of AI and Machine Learning 
         to anything Finance and Real Estate!</p>
+    <p style="text-align: right; font-style: italic; font-weight: bold; color: #b0893d;">
+      <a href="#research-full" style="color: inherit; text-decoration: none;">Learn more…</a>
+    </p>
+
   </section>
 
   <section id="teaching">
@@ -377,6 +403,9 @@
     <br> BUS 4999:<i> Independent Research </i>
     <br> HNR 4998:<i> Honors Thesis </i>
     <br> MBA 6991:<i> MBA Independent Study </i>
+    </p>
+    <p style="text-align: right; font-style: italic; font-weight: bold; color: #b0893d;">
+      <a href="#teaching-full" style="color: inherit; text-decoration: none;">Learn more…</a>
     </p>
   </section>
 
@@ -415,6 +444,7 @@
 <script src="script/UP_Btn.js"></script>
 <script src="script/toggle_Btn.js"></script>
 <script src="script/nav_highlight.js"></script>
+<script src="scripts/researchReveal.js"></script>
 
 </body>
 </html>
