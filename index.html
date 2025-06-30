@@ -355,6 +355,14 @@
     body.dark #research-full {
       --bg-overlay: 106, 15, 24; /* Elon maroon in dark mode */
     }
+    
+    #research-full h2 {
+      color: #6a0f18;
+    }
+    body.dark #research-full h2 {
+      color: #d0c29f;
+    }
+    
     #research-full h3 {
       color: #6a0f18;
       margin-top: 1rem;
@@ -363,16 +371,6 @@
         color: #d0c29f;
     }
     
-    #teaching-full {
-      min-height: 100vh; /* full height of the viewport */
-      padding: 4rem 2rem;
-      background: var(--box-color); /* or customize it */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      scroll-margin-top: 100px; /* so it’s not hidden behind header */
-    }
-
     .pub-year {
       padding: 0;
       margin: 0;
@@ -432,7 +430,40 @@
       margin-top: 0.5rem;
     }
 
+  /* ============================
+          Teaching-full
+    ============================ */ 
+    #teaching-full {
+      background: linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.9), rgba(var(--bg-overlay, 255,255,255), 0.9));
+      font-family: 'Merriweather', serif;
+      min-height: 100vh; /* full height of the viewport */
+      padding: 4rem 2rem;
+      background: var(--box-color); /* or customize it */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      scroll-margin-top: 100px; /* so it’s not hidden behind header */
+    }
+    body.dark #teaching-full {
+      --bg-overlay: 106, 15, 24; /* Elon maroon in dark mode */
+    }
+    
+    #teaching-full h2 {
+      color: #6a0f18;
+    }
+    body.dark #teaching-full h2 {
+      color: #d0c29f;
+    }
+    
+    #teaching-full h3 {
+      color: #6a0f18;
+      margin-top: 1rem;
+    }
+    body.dark #teaching-full h3 {
+        color: #d0c29f;
+    }
 
+    
     /* ============================
             Footer
     ============================ */ 
@@ -556,7 +587,7 @@
   ============================ 
 -->  
 <section id="research-full" class="fullpage-section">
-  <h2 style="font-size: 2.5rem; font-family: 'Spectral', serif; color: #6a0f18; margin-bottom: 0.5rem;">Research</h2>
+  <h2 style="font-size: 2.5rem; font-family: 'Spectral', serif; margin-top: 0; margin-bottom: 0.5rem;">Research</h2>
   <h3 style="font-size: 2rem; margin-bottom: 0.2rem;"><i>Published</i></h3>
   <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.2); margin-bottom: 0.5rem;">
 
@@ -627,7 +658,7 @@
          </a>
         <div>
           <a href="https://clsbluesky.law.columbia.edu/2018/06/25/how-exchange-listing-affects-corporate-governance/" 
-           style="color: #0645AD; margin-top: 0.5rem; display: inline-block; text-decoration: underline;" 
+           style="color: #d0c29f; margin-top: 0.5rem; display: inline-block; text-decoration: underline;" 
            target="_blank">
            Media mention: Columbia Law School Blue Sky Blog
         </a>
@@ -647,7 +678,7 @@
          </a>
         <div>
           <a href="https://alphaarchitect.com/retail-investors/" 
-           style="color: #0645AD; margin-top: 0.5rem; display: inline-block; text-decoration: underline;" 
+           style="color: #d0c29f; margin-top: 0.5rem; display: inline-block; text-decoration: underline;" 
            target="_blank">
            Media mention: Alpha Architect
         </a>
@@ -667,7 +698,7 @@
            <i class="fas fa-file-alt"></i> Publication
          </a>
         <div>
-      <a style="color: #b0893d; margin-top: 0.5rem; display: inline-block; text-decoration: none;"
+      <a style="color: #d0c29f; margin-top: 0.5rem; display: inline-block; text-decoration: none;"
         >Emerald Literati Outstanding Paper Award (2023)</a>
       </div>
     </div>
@@ -725,7 +756,7 @@
            <i class="fas fa-file-alt"></i> Publication
          </a>
         <div>
-      <a style="color: #b0893d; margin-top: 0.5rem; display: inline-block; text-decoration: none;"
+      <a style="color: #d0c29f; margin-top: 0.5rem; display: inline-block; text-decoration: none;"
         >Emerald Literati Outstanding Paper Award (2021)</a>
        </div>
   </div>
