@@ -351,7 +351,14 @@
       justify-content: center;
       scroll-margin-top: 100px; /* so it’s not hidden behind header */
     }
-
+    #research-full h3 {
+      color: #6a0f18;
+      margin-top: 2rem;
+    }
+    body.dark #research-full h3 {
+        color: #d0c29f;
+    }
+    
     #teaching-full {
       min-height: 100vh; /* full height of the viewport */
       padding: 4rem 2rem;
@@ -362,38 +369,64 @@
       scroll-margin-top: 100px; /* so it’s not hidden behind header */
     }
 
-    #research-full h3 {
-      color: #6a0f18;
-      margin-top: 2rem;
-    }
-
     .pub-year {
       padding: 0;
       margin: 0;
     }
-
     .pub-year h3 {
       font-family: 'Merriweather', serif;
       font-weight: 700;
       margin: 2.5rem 0 1rem 0;
     }
-
-  
-
-    .pub-entry strong {
-      font-weight: 700;
-    }
-
-
+     
     hr {
       margin: 0.5rem 0;
       border: none;
       border-top: 1px solid #999;
     }
-
-
-    body.dark #research-full h3 {
-        color: #d0c29f;
+     
+    .pub-entry {
+      margin-bottom: 1rem;
+    }
+    .pub-entry p {
+      margin-bottom: 0.4rem;
+    }
+    .pub-entry strong {
+      font-weight: 700;
+    }
+     
+    .pub-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.4rem 1rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #1f2f46;
+      background: #ffffff;
+      border: 2px solid #4a6fa5;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: 0.2rem;
+      margin-bottom: 0.4rem;
+    }
+    .pub-btn:hover {
+      background-color: #4a6fa5;
+      color: #ffffff;
+    }
+    .pub-btn i {
+      color: #4a6fa5;
+      transition: color 0.3s ease;
+    }
+    .pub-btn:hover i {
+      color: #ffffff;
+    }
+    .pub-note {
+      display: block;
+      font-style: italic;
+      color: #b0893d;
+      margin-top: 0.5rem;
     }
 
 
@@ -523,48 +556,6 @@
   <h2 style="color: #6a0f18;">Research</h2>
   <h3 style="font-size: 1.8rem;"><i>Published</i></h3>
   <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.2); margin-bottom: 2rem;">
-
-   <style>
-    .pub-entry {
-      margin-bottom: 1rem;
-    }
-    .pub-entry p {
-      margin-bottom: 0.4rem;
-    }
-    .pub-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 0.4rem 1rem;
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: #1f2f46;
-      background: #ffffff;
-      border: 2px solid #4a6fa5;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      margin-top: 0.2rem;
-      margin-bottom: 0.4rem;
-    }
-    .pub-btn:hover {
-      background-color: #4a6fa5;
-      color: #ffffff;
-    }
-    .pub-btn i {
-      color: #4a6fa5;
-      transition: color 0.3s ease;
-    }
-    .pub-btn:hover i {
-      color: #ffffff;
-    }
-    .pub-note {
-      display: block;
-      font-style: italic;
-      color: #b0893d;
-      margin-top: 0.5rem;
-    }
-  </style>
 
   <div class="pub-year">
     <h3 style="font-size: 2rem;">2025</h3>
