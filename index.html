@@ -466,23 +466,26 @@
       margin-top: 2rem;
       font-family: 'Merriweather', serif;
     }
+    .term {
+      font-weight: bold;
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      color: #6a0f18;
+    }
     .semester {
       position: relative;
-      margin-bottom: 0.5rem;
-      cursor: pointer;
+      margin-left: 1rem;
+      padding-left: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.6;
     }
-    .semester::after {
-      content: attr(data-score);
-      position: absolute;
-      right: 0;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      font-weight: bold;
+    .spot {
+      display: block;
       color: #4a6fa5;
-    }
-    .semester:hover::after {
-      opacity: 1;
-    }
+      font-style: italic;
+      font-size: 0.95rem;
+      margin-left: 1rem;
+      margin-top: 0.2rem;
     
     
     /* ============================
@@ -857,10 +860,28 @@
 
   <h3>Teaching Record by Semester</h3>
   <div class="teaching-record">
-    <div class="semester" data-score="5.69">Spring 2025: FIN 4130 (2 sections)</div>
-    <div class="semester" data-score="5.66">FIN 4973</div>
-    <div class="semester" data-score="6.00">BUS 4999</div>
-    <!-- Repeat for each line -->
+    <div class="term">Spring 2025</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (2 sections)<br><span class="spot">SPOT of 5.69 out of 6.00</span></div>
+    <div class="semester">FIN 4973: Blockchain and Emerging Financial Technologies (1 section)<br><span class="spot">SPOT of 5.66 out of 6.00</span></div>
+    <div class="semester">BUS 4999: Research for credit (1 student)<br><span class="spot">SPOT of 6.00 out of 6.00</span></div>
+
+    <div class="term">Fall 2024</div>
+    <div class="semester">FIN 4230: Financial Modeling with Excel (2 sections)<br><span class="spot">SPOT of 5.74 out of 6.00</span></div>
+    <div class="semester">FIN 4973: Blockchain and Emerging Financial Technologies (1 section)<br><span class="spot">SPOT of 5.68 out of 6.00</span></div>
+
+    <div class="term">Summer 2024</div>
+    <div class="semester">FIN 3030: Introduction to Finance (1 section)<br><span class="spot">SPOT of 6.00 out of 6.00</span></div>
+
+    <div class="term">Spring 2024</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (2 sections)<br><span class="spot">SPOT of 5.82 out of 6.00</span></div>
+    <div class="semester">FIN 4973: Blockchain and Emerging Financial Technologies (1 section)<br><span class="spot">SPOT of 5.52 out of 6.00</span></div>
+    <div class="semester">MBA 6991: MBA Independent Study (1 student)<br><span class="spot">SPOT of 6.00 out of 6.00</span></div>
+
+    <div class="term">Fall 2023</div>
+    <div class="semester">FIN 4230: Financial Modeling with Excel (1 section)<br><span class="spot">SPOT of 5.87 out of 6.00</span></div>
+    <div class="semester">FIN 4973: Blockchain and Emerging Financial Technologies (1 section)<br><span class="spot">SPOT of 5.91 out of 6.00</span></div>
+
+    <!-- Continue loading rest here as needed -->
   </div>
 </section>
 
