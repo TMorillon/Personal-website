@@ -462,7 +462,28 @@
       margin-top: 0.5rem;
     }
 
-
+    .teaching-record {
+      margin-top: 2rem;
+      font-family: 'Merriweather', serif;
+    }
+    .semester {
+      position: relative;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+    }
+    .semester::after {
+      content: attr(data-score);
+      position: absolute;
+      right: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-weight: bold;
+      color: #4a6fa5;
+    }
+    .semester:hover::after {
+      opacity: 1;
+    }
+    
     
     /* ============================
             Footer
@@ -810,12 +831,43 @@
          Teaching-full
   ============================
 -->  
-  <section id="teaching-full" class="fullpage-section">
-    <h2>Teaching</h2>
-    <p>
-    [Insert deeper teaching philosophy, course design, tools used, student projects, etc.]
-    </p>
-  </section>
+<section id="teaching-full" class="fullpage-section">
+  <h2>Teaching</h2>
+  <p>
+    I teach at the intersection of Finance and Fintech, where I combine cutting-edge concepts with hands-on, data-driven learning. I emphasize the importance of building workflows using real tools like Python, Excel, and GitHub, and I bring AI and blockchain into the classroom to help students work on projects that mimic the financial world they’ll enter. 
+  </p>
+  <p>
+    My approach focuses on active learning, case studies, and applied projects. I especially enjoy designing courses that bring technology into traditional Finance — notably in my Blockchain & Emerging Tech class, and Financial Modeling with Excel, both of which blend theory with market-relevant tools.
+  </p>
+
+  <h3>Courses Taught</h3>
+  <ul class="course-list">
+    <li><b>FIN 3030</b>: <i>Introduction to Finance</i></li>
+    <li><b>FIN 4030</b>: <i>Financial Markets and Institutions</i></li>
+    <li><b>FIN 4130</b>: <i>Advanced Managerial Finance</i></li>
+    <li><b>FIN 4230</b>: <i>Financial Modeling with Excel</i></li>
+    <li><b>FIN 4520</b>: <i>Real Estate Finance and Investment</i></li>
+    <li><b>FIN 4770</b>: <i>Finance and Blockchain</i></li>
+    <li><b>FIN 4780</b>: <i>SIE Prep Course</i></li>
+    <li><b>FIN 4973</b>: <i>Blockchain and Emerging Financial Technologies</i></li>
+    <li><b>BUS 4999</b>: <i>Independent Research</i></li>
+    <li><b>HNR 4998</b>: <i>Honors Thesis</i></li>
+    <li><b>MBA 6991</b>: <i>MBA Independent Study</i></li>
+  </ul>
+
+  <h3>Teaching Record by Semester</h3>
+  <div class="teaching-record">
+    <div class="semester" data-score="5.69">Spring 2025: FIN 4130 (2 sections)</div>
+    <div class="semester" data-score="5.66">FIN 4973</div>
+    <div class="semester" data-score="6.00">BUS 4999</div>
+    <!-- Repeat for each line -->
+  </div>
+</section>
+
+<style>
+
+</style>
+
 
 
 <!-- 
