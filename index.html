@@ -235,16 +235,29 @@
  /* ============================
      #Research & Teaching
   ============================ */  
-    #research,
-    #teaching {
+    #research {
       background:
         linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.90), rgba(var(--bg-overlay, 255,255,255), 0.90)),
         url('Images/Research.jpg') center/cover no-repeat;
+    } 
+    #teaching {
+      background:
+        linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.90), rgba(var(--bg-overlay, 255,255,255), 0.90)),
+        url('Images/Teaching.jpg') center/cover no-repeat;
     }
 
     body.dark #research,
     body.dark #teaching {
       --bg-overlay: 106, 15, 24; /* Elon maroon RGB */
+    }
+    
+    #research h2,
+    #teaching h2 {
+      color: #6a0f18; /* maroon in light mode */
+    }
+    body.dark #research h2,
+    body.dark #teaching h2 {
+      color: #d0c29f; /* Elon gold in dark mode */
     }
 
     .learn-more-btn {
@@ -267,12 +280,7 @@
     }
 
 
-    #teaching {
-      background:
-        linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.90), rgba(var(--bg-overlay, 255,255,255), 0.90)),
-        url('Images/Teaching.jpg') center/cover no-repeat;
-    }
-
+    
 
     /* ============================
               scrollTopBtn
