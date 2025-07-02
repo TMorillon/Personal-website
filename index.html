@@ -538,7 +538,21 @@
       font-style: italic;
       font-size: 0.95rem;
     }
- 
+
+
+
+    #teaching-full {
+  background:
+    linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.90), rgba(var(--bg-overlay, 255,255,255), 0.90)),
+    url('Images/Teaching.jpg') center/cover no-repeat fixed;
+}
+body.dark #teaching-full {
+  --bg-overlay: 106, 15, 24;
+  background:
+    linear-gradient(rgba(var(--bg-overlay), 0.90), rgba(var(--bg-overlay), 0.90)),
+    url('Images/Teaching.jpg') center/cover no-repeat fixed;
+}
+
 
     
     
