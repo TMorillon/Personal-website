@@ -457,21 +457,21 @@ hr.reveal {
       Teaching-full
 ============================ */
 #teaching-full {
-  background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90));
-  font-family: 'Merriweather', serif;
-  min-height: 100vh;
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  scroll-margin-top: 100px;
-  max-width: 880px;
-  margin: 0 auto;
-  border-radius: 0;
-  box-shadow: none;
-}
-body.dark #teaching-full {
-  background: linear-gradient(rgba(106,15,24,0.90), rgba(106,15,24,0.90));
+    background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90));
+    font-family: 'Merriweather', serif;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-margin-top: 100px;
+    max-width: none;          /* match research-full */
+    margin: 0;                /* match research-full */
+    border-radius: 0;
+    box-shadow: none;
+  }
+  body.dark #teaching-full {
+    background: linear-gradient(rgba(106,15,24,0.90), rgba(106,15,24,0.90));
 }
 #teaching-full h2 {
   color: #6a0f18;
