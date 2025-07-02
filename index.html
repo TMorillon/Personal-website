@@ -355,195 +355,168 @@
       background: var(--box-color);
     }
 
-   /* ============================
-      Research-full
-============================ */
-#research-full {
-  background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90));
-  font-family: 'Merriweather', serif;
-  max-width: 880px;
-  margin: 2rem auto 2rem 12%;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
-  scroll-margin-top: 100px;
-}
-body.dark #research-full {
-  background: linear-gradient(rgba(106,15,24,0.90), rgba(106,15,24,0.90));
-}
-#research-full h2 {
-  color: #6a0f18;
-}
-body.dark #research-full h2 {
-  color: #d0c29f;
-}
-#research-full h3 {
-  color: #6a0f18;
-  margin-top: 1rem;
-}
-body.dark #research-full h3 {
-  color: #d0c29f;
-}
-.pub-year {
-  padding: 0;
-  margin-top: 2rem;
-}
-.pub-year h3 {
-  font-family: 'Merriweather', serif;
-  font-weight: 700;
-  margin: 2rem 0 1rem 0;
-}
-hr {
-  border: none;
-  border-top: 0.75px solid #6a0f18;
-  margin: 0.5rem 0;
-  width: 0;
-  transition: width 0.6s ease-out;
-  overflow: hidden;
-}
-body.dark hr {
-  border-top: 0.75px solid #d0c29f;
-}
-hr.reveal {
-  width: 100%;
-}
-.pub-entry {
-  margin-bottom: 1rem;
-}
-.pub-entry p {
-  margin-bottom: 0.4rem;
-}
-.pub-entry strong {
-  font-weight: 700;
-}
-.pub-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0.4rem 1rem;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #1f2f46;
-  background: #ffffff;
-  border: 2px solid #4a6fa5;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin-top: 0.2rem;
-  margin-bottom: 0.4rem;
-}
-.pub-btn:hover {
-  background-color: #4a6fa5;
-  color: #ffffff;
-}
-.pub-btn i {
-  color: #4a6fa5;
-  transition: color 0.3s ease;
-}
-.pub-btn:hover i {
-  color: #ffffff;
-}
-.pub-note {
-  display: block;
-  color: #b0893d;
-  margin-top: 0.5rem;
-}
+    /* ============================
+      Research-full & Teaching-full
+    ============================ */ 
+    #research-full,
+    #teaching-full {
+      background: linear-gradient(rgba(var(--bg-overlay, 255,255,255), 0.9), rgba(var(--bg-overlay, 255,255,255), 0.9));
+      font-family: 'Merriweather', serif;
+      min-height: 100vh; /* full height of the viewport */
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      scroll-margin-top: 100px; /* so it’s not hidden behind header */
+    }
+    body.dark #research-full,
+    body.dark #teaching-full {
+      --bg-overlay: 106, 15, 24; /* Elon maroon in dark mode */
+    }
+    #teaching-full > * {
+      width: 100%;
+    }
+    
+    #research-full h2,
+    #teaching-full h2 {
+      color: #6a0f18;
+    }
+    body.dark #research-full h2,
+    body.dark #teaching-full h2 {
+      color: #d0c29f;
+    }
+    
+    #research-full h3,
+    #teaching-full h3 {
+      color: #6a0f18;
+      margin-top: 1rem;
+    }
+    body.dark #research-full h3,
+    body.dark #teaching-full h3 {
+        color: #d0c29f;
+    }
+    
+    .pub-year {
+      padding: 0;
+      margin-top: 2rem;
+    }
+    .pub-year h3 {
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+      margin: 2rem 0 1rem 0;
+    }
+     
+    hr {
+      border: none;
+      border-top: 0.75px solid #6a0f18; /* light mode line */
+      margin: 0.5rem 0;
+      width: 0;
+      transition: width 0.6s ease-out;
+      overflow: hidden;
+    }
+    body.dark hr {
+      border-top: 0.75px solid #d0c29f; /* white-ish in dark mode */
+    }
+    hr.reveal { /* When the section scrolls into view */
+      width: 100%;
+    }
+     
+    .pub-entry {
+      margin-bottom: 1rem;
+    }
+    .pub-entry p {
+      margin-bottom: 0.4rem;
+    }
+    .pub-entry strong {
+      font-weight: 700;
+    }
+     
+    .pub-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.4rem 1rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #1f2f46;
+      background: #ffffff;
+      border: 2px solid #4a6fa5;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: 0.2rem;
+      margin-bottom: 0.4rem;
+    }
+    .pub-btn:hover {
+      background-color: #4a6fa5;
+      color: #ffffff;
+    }
+    .pub-btn i {
+      color: #4a6fa5;
+      transition: color 0.3s ease;
+    }
+    .pub-btn:hover i {
+      color: #ffffff;
+    }
+    .pub-note {
+      display: block;
+      color: #b0893d;
+      margin-top: 0.5rem;
+    }
 
-/* ============================
-      Teaching-full
-============================ */
-#teaching-full {
-  background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90));
-  font-family: 'Merriweather', serif;
-  max-width: 880px;
-  margin: 2rem auto 2rem 12%;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
-  scroll-margin-top: 100px;
-}
-  body.dark #teaching-full {
-    background: linear-gradient(rgba(106,15,24,0.90), rgba(106,15,24,0.90));
-}
-#teaching-full h2 {
-  color: #6a0f18;
-}
-body.dark #teaching-full h2 {
-  color: #d0c29f;
-}
-#teaching-full h3 {
-  color: #6a0f18;
-  margin-top: 1rem;
-}
-body.dark #teaching-full h3 {
-  color: #d0c29f;
-}
-.teaching-record {
-  margin-top: 2rem;
-  font-family: 'Merriweather', serif;
-}
-.term {
-  font-weight: bold;
-  margin-top: 2rem;
-  font-size: 1.1rem;
-  color: #6a0f18;
-}
-.semester {
-  position: relative;
-  margin-left: 1rem;
-  padding-left: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-.spot {
-  display: block;
-  color: #4a6fa5;
-  font-style: italic;
-  font-size: 0.95rem;
-  margin-left: 1rem;
-  margin-top: 0.2rem;
-}
-.school {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 2.5rem 0 1rem;
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;
-  background: linear-gradient(to right, #6a0f18, #6a0f18);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-body.dark .school:first-of-type {
-  background: linear-gradient(to right, #d0c29f, #d0c29f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.school:last-of-type {
-  background: linear-gradient(to right, #000000, #FFD700);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-body.dark .school:last-of-type {
-  background: linear-gradient(to right, #FFD700, #000000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.teaching-entry {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  font-family: 'Merriweather', serif;
-  line-height: 1.6;
-}
-.teaching-entry p {
-  margin-bottom: 0.4rem;
-}
-.teaching-entry .spot {
-  color: #4a6fa5;
-  font-style: italic;
-  font-size: 0.95rem;
-}
-
-
+    .teaching-record {
+      margin-top: 2rem;
+      font-family: 'Merriweather', serif;
+    }
+    .term {
+      font-weight: bold;
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      color: #6a0f18;
+    }
+    .semester {
+      position: relative;
+      margin-left: 1rem;
+      padding-left: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .spot {
+      display: block;
+      color: #4a6fa5;
+      font-style: italic;
+      font-size: 0.95rem;
+      margin-left: 1rem;
+      margin-top: 0.2rem;
+    }
+    .school {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 2.5rem 0 1rem;
+      font-family: 'Playfair Display', serif;
+      text-transform: uppercase;
+      background: linear-gradient(to right, #6a0f18, #6a0f18);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    /* Dark mode override for Elon */
+    body.dark .school:first-of-type {
+      background: linear-gradient(to right, #d0c29f, #d0c29f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    /* Trulaske (Mizzou) school styling */
+    .school:last-of-type {
+      background: linear-gradient(to right, #000000, #FFD700); /* black to gold */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    body.dark .school:last-of-type {
+      background: linear-gradient(to right, #FFD700, #000000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
 
     
     
@@ -893,71 +866,102 @@ body.dark .school:last-of-type {
   ============================
 -->  
 <section id="teaching-full" class="fullpage-section">
-  <h2 style="font-size: 2.5rem; font-family: 'Spectral', serif; margin-top: 0; margin-bottom: 0.5rem;">Teaching</h2>
-
-  <h3 style="font-size: 2rem; margin-bottom: 0.2rem;"><i>Courses Taught</i></h3>
-  <hr style="margin-bottom: 0.5rem;">
-
-  <div class="teaching-entry">
-    <p><strong>FIN 3030</strong>: <i>Introduction to Finance</i></p>
-    <p><strong>FIN 4030</strong>: <i>Financial Markets and Institutions</i></p>
-    <p><strong>FIN 4130</strong>: <i>Advanced Managerial Finance</i></p>
-    <p><strong>FIN 4230</strong>: <i>Financial Modeling with Excel</i></p>
-    <p><strong>FIN 4520</strong>: <i>Real Estate Finance and Investment</i></p>
-    <p><strong>FIN 4770</strong>: <i>Finance and Blockchain</i></p>
-    <p><strong>FIN 4780</strong>: <i>SIE Prep Course</i></p>
-    <p><strong>FIN 4973</strong>: <i>Blockchain and Emerging Financial Technologies</i></p>
-    <p><strong>BUS 4999</strong>: <i>Independent Research</i></p>
-    <p><strong>HNR 4998</strong>: <i>Honors Thesis</i></p>
-    <p><strong>MBA 6991</strong>: <i>MBA Independent Study</i></p>
-  </div>
-
-  <h3 style="font-size: 2rem; margin-top: 3rem; margin-bottom: 0.2rem;"><i>Teaching Record by Semester</i></h3>
-  <hr style="margin-bottom: 0.5rem;">
-
-  <div class="teaching-entry">
-    <p><strong>Spring 2025</strong>: FIN 4130 (x2), FIN 4973, BUS 4999 <span class="spot">SPOTs: 5.66–6.00</span></p>
-    <p><strong>Fall 2024</strong>: FIN 4230 (x2), FIN 4973 <span class="spot">SPOTs: 5.68–5.74</span></p>
-    <p><strong>Summer 2024</strong>: FIN 3030 <span class="spot">SPOT: 6.00</span></p>
-    <p><strong>Spring 2024</strong>: FIN 4130 (x2), FIN 4973, MBA 6991 <span class="spot">SPOTs: 5.52–6.00</span></p>
-    <p><strong>Fall 2023</strong>: FIN 4230, FIN 4973 <span class="spot">SPOTs: 5.87–5.91</span></p>
-    <p><strong>Spring 2023</strong>: FIN 4130 (x2), FIN 4973 <span class="spot">SPOTs: 5.82–5.86</span></p>
-    <p><strong>Fall 2022</strong>: FIN 4130 (x2), FIN 4973 <span class="spot">SPOTs: 5.33–5.76</span></p>
-    <p><strong>Summer 2022</strong>: FIN 3030 <span class="spot">SPOT: 5.85</span></p>
-    <p><strong>Spring 2022</strong>: FIN 4130 (x2), FIN 4770, FIN 4780 <span class="spot">SPOTs: 5.29–5.85</span></p>
-    <p><strong>Summer 2021</strong>: FIN 3030 <span class="spot">SPOT: 5.71</span></p>
-    <p><strong>Spring 2021</strong>: FIN 4130 (x3) <span class="spot">SPOT: 5.78</span></p>
-    <p><strong>Fall 2020</strong>: FIN 4130 (x3) <span class="spot">SPOT: 5.69</span></p>
-    <p><strong>Summer 2020</strong>: FIN 3030 <span class="spot">SPOT: 5.33</span></p>
-    <p><strong>Spring 2020</strong>: FIN 4130 (x3) <span class="spot">SPOT: 5.77</span></p>
-    <p><strong>Fall 2019</strong>: FIN 4130 (x2) <span class="spot">SPOT: 5.57</span></p>
-    <p><strong>Spring 2019</strong>: FIN 4030 <span class="spot">SPOT: 4.85</span></p>
-    <p><strong>Summer 2018</strong>: BA 4500 <span class="spot">SPOT: 6.00</span></p>
-    <p><strong>Spring 2018</strong>: FIN 4520 <span class="spot">SPOT: 4.64</span></p>
-    <p><strong>Fall 2017</strong>: FIN 4520 <span class="spot">SPOT: 4.75</span></p>
-  </div>
-</section>
-
-
-
-
-  
-<!-- ============================
-         Test-full
-============================ -->
-<section id="test-full" class="fullpage-section">
-  <h2 style="font-size: 2.5rem; font-family: 'Spectral', serif; margin-top: 0; margin-bottom: 0.5rem;">Test Full Section</h2>
-  <p style="font-size: 1.2rem; font-family: 'Cormorant Garamond', serif;">
-    This is a test to verify if full-width layout is possible inside the section.
+  <h2>Teaching</h2>
+  <p>
+    I teach at the intersection of Finance and Fintech, where I combine cutting-edge concepts with hands-on, data-driven learning. I emphasize the importance of building workflows using real tools like Python, Excel, and GitHub, and I bring AI and blockchain into the classroom to help students work on projects that mimic the financial world they’ll enter. 
   </p>
-  <div style="background: gold; height: 60px; width: 100vw; margin-top: 2rem;">
-    This bar should stretch the full browser width (100vw).
+  <p>
+    My approach focuses on active learning, case studies, and applied projects. I especially enjoy designing courses that bring technology into traditional Finance — notably in my Blockchain & Emerging Tech class, and Financial Modeling with Excel, both of which blend theory with market-relevant tools.
+  </p>
+
+  <h3>Courses Taught</h3>
+  <ul class="course-list">
+    <li><b>FIN 3030</b>: <i>Introduction to Finance</i></li>
+    <li><b>FIN 4030</b>: <i>Financial Markets and Institutions</i></li>
+    <li><b>FIN 4130</b>: <i>Advanced Managerial Finance</i></li>
+    <li><b>FIN 4230</b>: <i>Financial Modeling with Excel</i></li>
+    <li><b>FIN 4520</b>: <i>Real Estate Finance and Investment</i></li>
+    <li><b>FIN 4770</b>: <i>Finance and Blockchain</i></li>
+    <li><b>FIN 4780</b>: <i>SIE Prep Course</i></li>
+    <li><b>FIN 4973</b>: <i>Blockchain and Emerging Financial Technologies</i></li>
+    <li><b>BUS 4999</b>: <i>Independent Research</i></li>
+    <li><b>HNR 4998</b>: <i>Honors Thesis</i></li>
+    <li><b>MBA 6991</b>: <i>MBA Independent Study</i></li>
+  </ul>
+
+  <h3>Teaching Record by Semester</h3>
+  <div class="teaching-record">
+    <div class="school">Martha and Spencer Love School of Business, Elon University</div>
+    <div class="term">Spring 2025</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (2 sections)<br><span class="spot">SPOT of 5.69 out of 6.00</span></div>
+    <div class="semester">FIN 4973: Blockchain and Emerging Financial Technologies (1 section)<br><span class="spot">SPOT of 5.66 out of 6.00</span></div>
+    <div class="semester">BUS 4999: Research for credit (1 student)<br><span class="spot">SPOT of 6.00 out of 6.00</span></div>
+
+    <div class="term">Fall 2024</div>
+    <div class="semester">FIN 4230: Financial Modeling with Excel (2 sections)<br><span class="spot">SPOT of 5.74 out of 6.00</span></div>
+    <div class="semester">FIN 4973: Blockchain and Emerging Financial Technologies (1 section)<br><span class="spot">SPOT of 5.68 out of 6.00</span></div>
+
+    <div class="term">Summer 2024</div>
+    <div class="semester">FIN 3030: Introduction to Finance (1 section)<br><span class="spot">SPOT of 6.00 out of 6.00</span></div>
+
+    <div class="term">Spring 2024</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (2 sections)<br><span class="spot">SPOT of 5.82 out of 6.00</span></div>
+    <div class="semester">FIN 4973: Blockchain and Emerging Financial Technologies (1 section)<br><span class="spot">SPOT of 5.52 out of 6.00</span></div>
+    <div class="semester">MBA 6991: MBA Independent Study (1 student)<br><span class="spot">SPOT of 6.00 out of 6.00</span></div>
+
+    <div class="term">Fall 2023</div>
+    <div class="semester">FIN 4230: Financial Modeling with Excel (1 section)<br><span class="spot">SPOT of 5.87 out of 6.00</span></div>
+    <div class="semester">FIN 4973: Blockchain and Emerging Financial Technologies (1 section)<br><span class="spot">SPOT of 5.91 out of 6.00</span></div>
+
+    <div class="term">Spring 2023</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (2 sections)<br><span class="spot">SPOT of 5.86 out of 6.00</span></div>
+    <div class="semester">FIN 4973: Blockchain and Emerging Financial Technologies (1 section)<br><span class="spot">SPOT of 5.82 out of 6.00</span></div>
+
+    <div class="term">Fall 2022</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (2 sections)<br><span class="spot">SPOT of 5.76 out of 6.00</span></div>
+    <div class="semester">FIN 4973: Blockchain and Emerging Financial Technologies (1 section)<br><span class="spot">SPOT of 5.33 out of 6.00</span></div>
+
+    <div class="term">Summer 2022</div>
+    <div class="semester">FIN 3030: Introduction to Finance (1 section)<br><span class="spot">SPOT of 5.85 out of 6.00</span></div>
+
+    <div class="term">Spring 2022</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (2 sections)<br><span class="spot">SPOT of 5.85 out of 6.00</span></div>
+    <div class="semester">FIN 4770: Blockchain and Finance (1 section)<br><span class="spot">SPOT of 5.60 out of 6.00</span></div>
+    <div class="semester">FIN 4780: SIE Prep Course (1 section)<br><span class="spot">SPOT of 5.29 out of 6.00</span></div>
+
+    <div class="term">Summer 2021</div>
+    <div class="semester">FIN 3030: Introduction to Finance (1 section)<br><span class="spot">SPOT of 5.71 out of 6.00</span></div>
+
+    <div class="term">Spring 2021</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (3 sections)<br><span class="spot">SPOT of 5.78 out of 6.00</span></div>
+
+    <div class="term">Fall 2020</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (3 sections)<br><span class="spot">SPOT of 5.69 out of 6.00</span></div>
+
+    <div class="term">Summer 2020</div>
+    <div class="semester">FIN 3030: Introduction to Finance (1 section)<br><span class="spot">SPOT of 5.33 out of 6.00</span></div>
+
+    <div class="term">Spring 2020</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (3 sections)<br><span class="spot">SPOT of 5.77 out of 6.00</span></div>
+
+    <div class="term">Fall 2019</div>
+    <div class="semester">FIN 4130: Advanced Managerial Finance (2 sections)<br><span class="spot">SPOT of 5.57 out of 6.00</span></div>
+
+    <div class="school">Trulaske College of Business, University of Missouri</div>
+    <div class="term">Spring 2019</div>
+    <div class="semester">FIN 4030: Financial Markets and Institutions<br><span class="spot">SPOT of 4.85 out of 5.00</span></div>
+
+    <div class="term">Summer 2018</div>
+    <div class="semester">BA 4500: Professional Development Program<br><span class="spot">SPOT of 6.00 out of 6.00</span></div>
+
+    <div class="term">Spring 2018</div>
+    <div class="semester">FIN 4520: Real Estate Finance and Investment<br><span class="spot">SPOT of 4.64 out of 5.00</span></div>
+
+    <div class="term">Fall 2017</div>
+    <div class="semester">FIN 4520: Real Estate Finance and Investment<br><span class="spot">SPOT of 4.75 out of 5.00</span></div>
   </div>
 </section>
 
-
-
-  
 
 
 
