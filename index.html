@@ -482,6 +482,32 @@
     body.dark .pub-note {
       color: #d0c29f; /* gold for dark mode */
     }
+    .pub-note.award-logo {
+      position: relative;
+      display: inline-block;
+      padding-right: 36px; /* room for logo */
+    }
+
+    .pub-note.award-logo::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url('Literati_logo_noBG.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .pub-note.award-logo:hover::after {
+      opacity: 1;
+    }
+
 
 
     
@@ -792,7 +818,7 @@
            <i class="fas fa-file-alt"></i> Publication
          </a>
         <div>
-      <a class="pub-note">
+      <a class="pub-note award-logo">
         Emerald Literati Outstanding Paper Award (2023)</a>
       </div>
     </div>
@@ -850,8 +876,8 @@
            <i class="fas fa-file-alt"></i> Publication
          </a>
         <div>
-      <a class="pub-note";
-        >Emerald Literati Outstanding Paper Award (2021)</a>
+      <a class="pub-note award-logo">
+        Emerald Literati Outstanding Paper Award (2021)</a>
        </div>
   </div>
 </div>
