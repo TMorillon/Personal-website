@@ -6,5 +6,5 @@ It includes a brief introduction, my research interests, and my teaching activit
 
 ## Live Site
 
-[https://tmorillon.github.io/Personal-website](https://tmorillon.github.io/Personal-website)
+[https://tmorillon.github.io](https://tmorillon.github.io)
 
