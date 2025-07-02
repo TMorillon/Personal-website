@@ -355,189 +355,201 @@
       background: var(--box-color);
     }
 
-    /* ============================
-      Research-full & Teaching-full
-    ============================ */ 
-    #research-full,
-    #teaching-full {
-      background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90));
-      font-family: 'Merriweather', serif;
-      min-height: 100vh;
-      padding: 4rem 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      scroll-margin-top: 100px; 
-  /* ADD THESE LINES TO FIX THE BOXED APPEARANCE: */
-      max-width: none;          /* Remove width constraint */
-      margin: 0;                /* Remove auto-centering margins */
-      border-radius: 0;         /* Remove rounded corners */
-      box-shadow: none;         /* Remove shadow */
-    }
-    body.dark #research-full,
-    body.dark #teaching-full {
-      background: linear-gradient(rgba(106,15,24,0.90), rgba(106,15,24,0.90));
-    }
-    #teaching-full {
-      max-width: 880;
-    }
-    
-    #research-full h2,
-    #teaching-full h2 {
-      color: #6a0f18;
-    }
-    body.dark #research-full h2,
-    body.dark #teaching-full h2 {
-      color: #d0c29f;
-    }
-    
-    #research-full h3,
-    #teaching-full h3 {
-      color: #6a0f18;
-      margin-top: 1rem;
-    }
-    body.dark #research-full h3,
-    body.dark #teaching-full h3 {
-        color: #d0c29f;
-    }
-    
-    .pub-year {
-      padding: 0;
-      margin-top: 2rem;
-    }
-    .pub-year h3 {
-      font-family: 'Merriweather', serif;
-      font-weight: 700;
-      margin: 2rem 0 1rem 0;
-    }
-     
-    hr {
-      border: none;
-      border-top: 0.75px solid #6a0f18; /* light mode line */
-      margin: 0.5rem 0;
-      width: 0;
-      transition: width 0.6s ease-out;
-      overflow: hidden;
-    }
-    body.dark hr {
-      border-top: 0.75px solid #d0c29f; /* white-ish in dark mode */
-    }
-    hr.reveal { /* When the section scrolls into view */
-      width: 100%;
-    }
-     
-    .pub-entry {
-      margin-bottom: 1rem;
-    }
-    .pub-entry p {
-      margin-bottom: 0.4rem;
-    }
-    .pub-entry strong {
-      font-weight: 700;
-    }
-     
-    .pub-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 0.4rem 1rem;
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: #1f2f46;
-      background: #ffffff;
-      border: 2px solid #4a6fa5;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      margin-top: 0.2rem;
-      margin-bottom: 0.4rem;
-    }
-    .pub-btn:hover {
-      background-color: #4a6fa5;
-      color: #ffffff;
-    }
-    .pub-btn i {
-      color: #4a6fa5;
-      transition: color 0.3s ease;
-    }
-    .pub-btn:hover i {
-      color: #ffffff;
-    }
-    .pub-note {
-      display: block;
-      color: #b0893d;
-      margin-top: 0.5rem;
-    }
+   /* ============================
+      Research-full
+============================ */
+#research-full {
+  background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90));
+  font-family: 'Merriweather', serif;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: 100px;
+  max-width: none;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+body.dark #research-full {
+  background: linear-gradient(rgba(106,15,24,0.90), rgba(106,15,24,0.90));
+}
+#research-full h2 {
+  color: #6a0f18;
+}
+body.dark #research-full h2 {
+  color: #d0c29f;
+}
+#research-full h3 {
+  color: #6a0f18;
+  margin-top: 1rem;
+}
+body.dark #research-full h3 {
+  color: #d0c29f;
+}
+.pub-year {
+  padding: 0;
+  margin-top: 2rem;
+}
+.pub-year h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+}
+hr {
+  border: none;
+  border-top: 0.75px solid #6a0f18;
+  margin: 0.5rem 0;
+  width: 0;
+  transition: width 0.6s ease-out;
+  overflow: hidden;
+}
+body.dark hr {
+  border-top: 0.75px solid #d0c29f;
+}
+hr.reveal {
+  width: 100%;
+}
+.pub-entry {
+  margin-bottom: 1rem;
+}
+.pub-entry p {
+  margin-bottom: 0.4rem;
+}
+.pub-entry strong {
+  font-weight: 700;
+}
+.pub-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #1f2f46;
+  background: #ffffff;
+  border: 2px solid #4a6fa5;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+.pub-btn:hover {
+  background-color: #4a6fa5;
+  color: #ffffff;
+}
+.pub-btn i {
+  color: #4a6fa5;
+  transition: color 0.3s ease;
+}
+.pub-btn:hover i {
+  color: #ffffff;
+}
+.pub-note {
+  display: block;
+  color: #b0893d;
+  margin-top: 0.5rem;
+}
 
-    .teaching-record {
-      margin-top: 2rem;
-      font-family: 'Merriweather', serif;
-    }
-    .term {
-      font-weight: bold;
-      margin-top: 2rem;
-      font-size: 1.1rem;
-      color: #6a0f18;
-    }
-    .semester {
-      position: relative;
-      margin-left: 1rem;
-      padding-left: 0.5rem;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    .spot {
-      display: block;
-      color: #4a6fa5;
-      font-style: italic;
-      font-size: 0.95rem;
-      margin-left: 1rem;
-      margin-top: 0.2rem;
-    }
-    .school {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin: 2.5rem 0 1rem;
-      font-family: 'Playfair Display', serif;
-      text-transform: uppercase;
-      background: linear-gradient(to right, #6a0f18, #6a0f18);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    /* Dark mode override for Elon */
-    body.dark .school:first-of-type {
-      background: linear-gradient(to right, #d0c29f, #d0c29f);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    /* Trulaske (Mizzou) school styling */
-    .school:last-of-type {
-      background: linear-gradient(to right, #000000, #FFD700); /* black to gold */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    body.dark .school:last-of-type {
-      background: linear-gradient(to right, #FFD700, #000000);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    
-   .teaching-entry {
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-      font-family: 'Merriweather', serif;
-      line-height: 1.6;
-    }
-
-    .teaching-entry p {
-      margin-bottom: 0.4rem;
-    }
-
-    .teaching-entry .spot {
-      color: #4a6fa5;
-      font-style: italic;
-      font-size: 0.95rem;
-    }
+/* ============================
+      Teaching-full
+============================ */
+#teaching-full {
+  background: linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90));
+  font-family: 'Merriweather', serif;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: 100px;
+  max-width: 880px;
+  margin: 0 auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+body.dark #teaching-full {
+  background: linear-gradient(rgba(106,15,24,0.90), rgba(106,15,24,0.90));
+}
+#teaching-full h2 {
+  color: #6a0f18;
+}
+body.dark #teaching-full h2 {
+  color: #d0c29f;
+}
+#teaching-full h3 {
+  color: #6a0f18;
+  margin-top: 1rem;
+}
+body.dark #teaching-full h3 {
+  color: #d0c29f;
+}
+.teaching-record {
+  margin-top: 2rem;
+  font-family: 'Merriweather', serif;
+}
+.term {
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #6a0f18;
+}
+.semester {
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.spot {
+  display: block;
+  color: #4a6fa5;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+}
+.school {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 2.5rem 0 1rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #6a0f18, #6a0f18);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body.dark .school:first-of-type {
+  background: linear-gradient(to right, #d0c29f, #d0c29f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.school:last-of-type {
+  background: linear-gradient(to right, #000000, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body.dark .school:last-of-type {
+  background: linear-gradient(to right, #FFD700, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.teaching-entry {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+}
+.teaching-entry p {
+  margin-bottom: 0.4rem;
+}
+.teaching-entry .spot {
+  color: #4a6fa5;
+  font-style: italic;
+  font-size: 0.95rem;
+}
 
 
 
