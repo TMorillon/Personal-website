@@ -56,10 +56,14 @@
       color: #d0c29f;
       padding: 0.5rem 2rem;
     }
+    header nav {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
 
     header .container {
       display: flex;
-      justify-content: center; /* so nav stays next to your name */
       align-items: center;       /* aligns text baselines */
       gap: 2rem;
     }
@@ -490,7 +494,7 @@
     .pub-note.award-logo::after {
       content: '';
       position: absolute;
-      top: 50%;
+      top: 30%;
       right: -80px;
       width: 250px;
       height: 250px;
