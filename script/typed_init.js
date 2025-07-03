@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (target && typeof Typed !== 'undefined') {
     new Typed('#typed-intro', {
       strings: [
-        "Thibaut G. Morillon",
-        "Professor of Finance",
-        "Fintech | AI | Real Estate"
+        "Thibaut G. Morillon"
       ],
       typeSpeed: 60,
       backSpeed: 30,
