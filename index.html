@@ -572,8 +572,33 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    
 
+    
+    /* ============================
+            LLM bot
+    ============================ */
+    #floating-avatar {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 999;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    #floating-avatar:hover {
+      transform: scale(1.1);
+    }
+    #floating-avatar img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    
     
     
     /* ============================
@@ -1045,6 +1070,18 @@
     <p>&copy; 2025 Thibaut G. Morillon</p>
   </footer>
 
+
+<!-- 
+  ============================
+            LLM bot
+  ============================
+-->    
+<a href="https://chatgpt.com/g/g-6865f26998f881918f11472e5a1f01ec-t-bot" 
+   target="_blank" 
+   id="floating-avatar" 
+   title="Chat with Thibaut’s AI Assistant">
+  <img src="Images/Mini_Me_transparent.png" alt="T-bot" />
+</a>
 
   
 <!-- 
